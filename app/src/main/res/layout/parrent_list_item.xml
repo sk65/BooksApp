@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_black"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginStart="16dp"
+        android:id="@+id/tvGroupTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/nunito_sans"
+        android:textColor="@color/white"
+        android:textFontWeight="700"
+        android:textSize="20sp"
+        tools:text="New Arrivals" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:clipToPadding="false"
+        android:paddingEnd="8dp"
+        android:id="@+id/rvNestedList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/child_list_item"
+        tools:orientation="horizontal" />
+</LinearLayout>
